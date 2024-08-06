@@ -8,27 +8,37 @@
 </head>
 <body>
 	<div id="card">
+		<div class="coordinator"></div>
 		<div id="image-holder">
 			<img id="image" src="./img/photo2.jpg"></img>
+			<div class="image-zoomer"><img class="arrow prew-arrow"src="./icons/wave-oval/zoom-in-svgrepo-com.svg" alt="zoom"></div>
 		</div>
-		<div class="count-shower">
-			<div class="block"></div>
-			<div class="block active-block"></div>
-			<div class="block"></div>
-			<div class="block"></div>
+		<div class="navigation">
+			<div class="prev"><img class="arrow prew-arrow"src="./icons/wave-oval/chevron-left-svgrepo-com.svg" alt="prew"></div>
+			<div class="position-viewer">
+				<div class="block"></div>
+				<div class="block active-block"></div>
+				<div class="block"></div>
+				<div class="block"></div>
+				<div class="block"></div>
+				<div class="block"></div>
+			</div>
+			<div class="next"><img class="arrow next-arrow" src="./icons/wave-oval/chevron-right-svgrepo-com.svg" alt="next"></div>
 		</div>
-		<div id="navigation">
-			<div class="prev"><img class="arrow prew-arrow"src="./icons/arrow-left.svg" alt="prew"></div>
-			<h1 class="name-photo">Name of photo</h1>
-			<div class="next"><img class="arrow next-arrow" src="./icons/arrow-right.svg" alt="next"></div>
+		<div id="text">
+			<h1 class="name-photo"><b>N</b>ame of photo</h1>
+			<p class="description-photo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit id aspernatur ipsum eius odit veritatis iusto totam exercitationem debitis ab eos corporis voluptates perferendis at blanditiis, asperiores quasi nihil nisi?</p>
 		</div>
-		<div id="menu">
-			<div class="card-button home-btn"><img class="menu-button-icon" src="./icons/smoothie/camera-svgrepo-com.svg" alt="track"></div>
-			<div class="card-button track-btn"><img class="menu-button-icon" src="./icons/track-svgrepo-com.svg" alt="track"></div>
-			<div class="card-button description-btn"><img class="menu-button-icon" src="./icons/report-svgrepo-com.svg" alt="track"></div>
+		<div class="card-footer">
+			<div class="tag-box">
+			<span><b>#</b>Karelia</span>
+			<span><b>#</b>Onega</span>
+			<span><b>#</b>Nature</span>
 		</div>
-
+		<div class="time-box">2 <b>days</b> ago</div>
+		</div>
 	</div>
+	
 	<script src="./script.js"></script>
 </body>
 </html>

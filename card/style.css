@@ -5,11 +5,16 @@
 	margin: 0;
 	font-family: "Comfortaa", sans-serif;
   	font-size: 14px;
-  	font-weight: 600;
+  	font-weight: 300;
+}
+
+b {
+	color: #f05d43;
+	font-weight: 600;
 }
 
 #card {
-	padding: 5px;
+	padding: 10px;
 	width: 30%;
 	min-width: 400px;
 	/*background: blue;*/
@@ -22,58 +27,106 @@
 #image-holder {
 	/*background: red;*/
 	width: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 #image-holder > img {
 	width: 100%;
 	object-fit: cover;
+	transition: all 600ms ease;
 }
 
-#navigation {
+#image-holder > img:hover {
+	transform: scale(1.01);
+}
+
+#image-holder .image-zoomer {
+	width: 50px;
+	height:50px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transition: all 600ms ease;
+}
+
+#image-holder .image-zoomer:hover {
+	transform: scale(1.2);
+}
+
+#image-holder .image-zoomer img {
+	width: 50px;
+	height: 50px;
+}
+
+.navigation {
+	height: 50px;
+	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	transition: all 600ms ease;
 }
 
-#navigation div:first-child {
+.navigation .prev, .next {
 	width: 10%;
+	border-radius: 50%;
+	transition: all 600ms ease;
 }
 
-#navigation div:last-child {
-	width: 10%;
+.navigation .prev:hover, .next:hover {
+	transform: scale(1.2);
 }
 
-#navigation div .arrow {
+.navigation div .arrow {
 	color: #fff;
 	width: 100%;
 }
 
-h1 {
-	/*background: orange;*/
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-#menu {
-	width: 100%;
+.navigation .position-viewer {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	/*background: #c4c4c4;*/
+	justify-content: center;
+	width: 75%;
+	overflow-x: hidden;
+}
+
+.navigation .block {
+	width: 10%;
+	height: 5px;
+	margin-right: 3px; 
+	background: #c4c4c4;
+	transition: all 100ms ease;
+}
+
+.navigation .block:hover {
+	height: 7px;
+	border-radius: 0 0 4px 4px;
+}
+
+.navigation .active-block {
+	background: #f05d43;
+	height: 7px;
+	border-radius: 0 0 4px 4px;
+	transition: all 100ms ease;
+}
+
+.navigation .active-block:hover {
+	background: #f08e7d;
+	height: 7px;
+	border-radius: 0 0 4px 4px;
+}
+
+#text .name-photo {
+	font-family: "Comfortaa", sans-serif;
+  	font-size: 1.2em;
+	font-weight: 700;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-#menu .card-button {
-	/*background: #ccc;*/
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
-}
+#text .description-photo {
 
-.menu-button-icon {
-	width: 100%;
 }
 
 .count-shower {
@@ -85,15 +138,24 @@ h1 {
 	height: 10px;
 }
 
-.block {
-	width: 10%;
-	height: 5px;
-	margin-right: 3px; 
-	background: black;
+#card .card-footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	line-height: 30px;
+	border-top: solid 2px #9c9c9c;
 }
 
-.active-block {
-	background: red;
-	height: 7px;
+#card .card-footer .tag-box {
+	width: 60%;
 }
+
+#card .card-footer .time-box {
+	width: 30%;
+	text-align: right;
+}
+
+
+
+
 
