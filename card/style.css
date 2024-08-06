@@ -8,6 +8,10 @@
   	font-weight: 300;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 b {
 	color: #f05d43;
 	font-weight: 600;
