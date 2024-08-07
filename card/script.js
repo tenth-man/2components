@@ -2,7 +2,7 @@ let cardImage = document.getElementById('image-holder');
 let navigationPanel = document.querySelector('.navigation');
 let prevButton = document.querySelector(".prev");
 let nextButton = document.querySelector(".next");
-let zoomButton = document.querySelector(".image-zoomer");
+//let zoomButton = document.querySelector(".image-zoomer");
 
 navigationPanel.style.height = '0';
 
@@ -17,10 +17,11 @@ cardImage.addEventListener('mouseleave', () => {navigationPanel.style.height = '
 navigationPanel.addEventListener('mouseenter', () => {navigationPanel.style.height = '50px'})
 navigationPanel.addEventListener('mouseleave', () => {navigationPanel.style.height = '0'});
 
-zoomButton.addEventListener("click", () => {alert('image zoomed!')});
+//zoomButton.addEventListener("click", () => {alert('image zoomed!')});
 
 let card = document.getElementById('card');
 console.log(`w: ${card.clientWidth}, h: ${card.clientHeight}`);
+
 // let cardImageHolder = document.getElementById('image-holder');
 // let image = document.getElementById('image');
 
